@@ -20,7 +20,7 @@ public class MagicLinkRequest {
   private String redirectUri;
 
   @JsonProperty("expiration_seconds")
-  private int expirationSeconds = 60 * 60 * 24;
+  private int expirationSeconds = 60 * 15;
 
   @JsonProperty("force_create")
   private boolean forceCreate = false;

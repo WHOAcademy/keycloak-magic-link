@@ -203,7 +203,7 @@ public class MagicLink {
       Boolean rememberMe,
       Boolean isActionTokenPersistent) {
     // build the action token
-    int validityInSecs = validity.orElse(60 * 60 * 24); // 1 day
+    int validityInSecs = validity.orElse(60 * 15); // 15 minutes
     int absoluteExpirationInSecs = Time.currentTime() + validityInSecs;
     MagicLinkActionToken token =
         new MagicLinkActionToken(
